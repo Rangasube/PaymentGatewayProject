@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="16" total="17" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26718" started-at="2020-11-18T07:03:29Z" finished-at="2020-11-18T07:03:56Z">
+    <groups>
+      <group name="IntegrationTest">
+        <method signature="HomePageTest.validatePlaceOrder()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2d928643]" name="validatePlaceOrder" class="com.pgw.qa.testcases.HomePageTest"/>
+      </group> <!-- IntegrationTest -->
+    </groups>
+    <test name="Test" duration-ms="26718" started-at="2020-11-18T07:03:29Z" finished-at="2020-11-18T07:03:56Z">
+      <class name="com.pgw.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2d928643]" name="setUp" is-config="true" duration-ms="19435" started-at="2020-11-18T07:03:29Z" finished-at="2020-11-18T07:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePlaceOrder()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2d928643]" name="validatePlaceOrder" duration-ms="7219" started-at="2020-11-18T07:03:49Z" finished-at="2020-11-18T07:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-11-18T07:03:56Z" finished-at="2020-11-18T07:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pgw.qa.testcases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

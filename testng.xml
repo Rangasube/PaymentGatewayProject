@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="IntegrationTest"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.pgw.qa.testcases.HomePageTest" />
+			<class name="com.pgw.qa.testcases.PaymentProcessPageTest" />
+			<class name="com.pgw.qa.testcases.OrderIdPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
