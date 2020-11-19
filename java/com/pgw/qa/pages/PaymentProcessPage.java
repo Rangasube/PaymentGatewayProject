@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 import com.pgw.qa.base.TestBase;
 
 public class PaymentProcessPage extends TestBase {
-	public static String cardNo,cvv;
 
 	@FindBy(xpath="//h2[normalize-space()='Payment Process']")
 	WebElement ppTitle;
@@ -45,10 +44,10 @@ public class PaymentProcessPage extends TestBase {
 	public boolean validatePriceTag() {
 		return PriceTag.isDisplayed();
 	}
-	public OrderIdPage paymentProcess(String cardNo,String cvv) {
+	public OrderIdPage paymentProcess() {
 	
 		Select select1,select2;
-		cardNum.sendKeys(cardNo);
+		cardNum.sendKeys("1234567891234567");
 		selectMonth.click();
 		select1 = new Select(selectMonth);
 		select1.selectByVisibleText("04");
@@ -57,7 +56,7 @@ public class PaymentProcessPage extends TestBase {
 		select2 = new Select(selectYear);
 		select2.selectByVisibleText("2026");
 		
-		cvvCode.sendKeys(cvv);
+		cvvCode.sendKeys("201");
 		payButton.click();
 		
 		return new OrderIdPage();

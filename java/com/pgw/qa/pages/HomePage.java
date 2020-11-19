@@ -70,25 +70,28 @@ public class HomePage extends TestBase{
 		buyButton.click();
 		return new PaymentProcessPage();
 	}
-	public void placeOrder(String cardNo,String cvv) {
+	public void placeOrder() {
 		
-		
+		String quantity;
 		Select select;
 		quantityDropdown.click();
 		select = new Select(quantityDropdown);
 		select.selectByValue("5");
-		String quantity=select.getFirstSelectedOption().getText();
+		quantity=select.getFirstSelectedOption().getText();
 		System.out.println("Quantity selected : "+quantity);
 		
 		buyButton.click();
 		
 		String totalPrice = paymentProcessPage.PriceTag.getText();
 		System.out.println("Total Price : "+totalPrice);
-		paymentProcessPage.paymentProcess(cardNo, cvv);
+	//	System.out.println("Payment Succesfull...");
+		paymentProcessPage.paymentProcess();
 		String msg = orderIdPage.successMessage.getText();
 		System.out.println("<<<<< "+msg+" >>>>>");
 		String orderid = orderIdPage.orderId.getText();
 		System.out.println("Your Order is placed... & Your OrderId is : "+orderid);
+		
+		
 		
 	}
 }

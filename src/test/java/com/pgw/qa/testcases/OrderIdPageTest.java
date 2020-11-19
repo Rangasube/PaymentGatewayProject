@@ -21,11 +21,11 @@ public class OrderIdPageTest extends TestBase{
 		super();
 	}
 	@BeforeMethod(alwaysRun=true)
-	public void setUp() {
+	public void setUp(String cardNo,String cvv) {
 		initialization();
 		homePage= new HomePage();
 		paymentProcessPage = homePage.validateBuyButton();
-		orderIdPage = paymentProcessPage.paymentProcess();
+		orderIdPage = paymentProcessPage.paymentProcess(cardNo, cvv);
 		
 	}
 	@Test(priority=1,enabled=false) //we can skip tests by parameterizing @Test as *enabled-false*

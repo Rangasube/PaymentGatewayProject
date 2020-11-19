@@ -1,18 +1,24 @@
 package com.pgw.qa.testcases;
 
+import java.io.IOException;
+import java.util.HashMap;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.pgw.qa.base.TestBase;
 import com.pgw.qa.pages.HomePage;
 import com.pgw.qa.pages.PaymentProcessPage;
+import com.pgw.qa.util.TestUtil;
 
 public class HomePageTest extends TestBase{
 	HomePage homepage;
 	PaymentProcessPage paymentprocesspage;
-
+	String sheetName = "PaymentPage";
 	public HomePageTest() {
 		super();
 	}
@@ -60,12 +66,17 @@ public class HomePageTest extends TestBase{
 	public void buyButtonTest() {
 		paymentprocesspage = homepage.validateBuyButton();
 	}
-	@Test(groups="IntegrationTest")
-	public void validatePlaceOrder() {
-		homepage.placeOrder();
+	@DataProvider()
+	public Object[][] getPGWTestData() throws Exception {
+		Object[][] data = TestUtil.getTestData(sheetName);
+		return data;
+	}
+	@Test(dataProvider="getPGWTestData")
+	public void validatePlaceOrder(String cardNo,String cvv) {
+		homepage.placeOrder(cardNo, cvv);
 	}
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() {
-	//	driver.quit();
+		//	driver.quit();
 	}
 }

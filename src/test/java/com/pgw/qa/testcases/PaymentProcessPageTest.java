@@ -1,19 +1,26 @@
 package com.pgw.qa.testcases;
 
+import java.io.IOException;
+import java.util.HashMap;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.pgw.qa.base.TestBase;
 import com.pgw.qa.pages.HomePage;
 import com.pgw.qa.pages.OrderIdPage;
 import com.pgw.qa.pages.PaymentProcessPage;
+import com.pgw.qa.util.TestUtil;
 
 public class PaymentProcessPageTest extends TestBase {
 	HomePage homePage;
 	PaymentProcessPage paymentProcessPage;
 	OrderIdPage orderIdPage;
+	String sheetName = "PaymentPage";
 	public PaymentProcessPageTest() {
 		super();
 	}
@@ -39,9 +46,14 @@ public class PaymentProcessPageTest extends TestBase {
 		boolean flag = paymentProcessPage.validatePriceTag();
 		Assert.assertTrue(flag);	
 	}
-	@Test(groups = "FunctionalTest")
-	public void paymentProcessTest() {
-		orderIdPage = paymentProcessPage.paymentProcess();
+/*	@DataProvider()
+	public Object[][] getPGWTestData() throws Exception {
+		Object[][] data = TestUtil.getTestData(sheetName);
+		return data;
+	}*/
+	@Test(groups = "FunctionalTest",dataProvider="getPGWTestData")
+	public void paymentProcessTest(String cardNo,String cvv) {
+		orderIdPage = paymentProcessPage.paymentProcess(cardNo, cvv);
 	}
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() {
