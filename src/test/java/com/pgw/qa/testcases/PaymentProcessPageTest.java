@@ -46,11 +46,11 @@ public class PaymentProcessPageTest extends TestBase {
 		boolean flag = paymentProcessPage.validatePriceTag();
 		Assert.assertTrue(flag);	
 	}
-/*	@DataProvider()
+	@DataProvider()
 	public Object[][] getPGWTestData() throws Exception {
 		Object[][] data = TestUtil.getTestData(sheetName);
 		return data;
-	}*/
+	}
 	@Test(groups = "FunctionalTest",dataProvider="getPGWTestData")
 	public void paymentProcessTest(String cardNo,String cvv) {
 		orderIdPage = paymentProcessPage.paymentProcess(cardNo, cvv);

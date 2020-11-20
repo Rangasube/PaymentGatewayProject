@@ -1,9 +1,5 @@
 package com.pgw.qa.testcases;
 
-import java.io.IOException;
-import java.util.HashMap;
-
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,12 +28,12 @@ public class HomePageTest extends TestBase{
 		String title = homepage.validatePageTitle();
 		Assert.assertEquals(title, "Guru99 Payment Gateway");
 	}
-	@Test(groups= "Regression",priority=2)
+	@Test(priority=2)
 	public void appLogoTest() {
 		boolean flag = homepage.validateAppLogo();
 		Assert.assertTrue(flag);
 	}
-	@Test(groups= "Regression",priority=3)
+	@Test(priority=3)
 	public void pgwLogoTest() {
 		boolean flag = homepage.validatePGWLogo();
 		Assert.assertTrue(flag);
@@ -57,7 +53,7 @@ public class HomePageTest extends TestBase{
 		String price = homepage.validateProductPrice();
 		Assert.assertEquals(price, "Price: $20");
 	}
-	@Test(groups="SmokeTest")
+	@Test(priority=7)
 	public void quantityTest() {
 		String quantity=  homepage.validateQuantity();
 		Assert.assertEquals(quantity,"5");
@@ -71,7 +67,7 @@ public class HomePageTest extends TestBase{
 		Object[][] data = TestUtil.getTestData(sheetName);
 		return data;
 	}
-	@Test(dataProvider="getPGWTestData")
+	@Test(dataProvider="getPGWTestData",groups="IntegrationTest")
 	public void validatePlaceOrder(String cardNo,String cvv) {
 		homepage.placeOrder(cardNo, cvv);
 	}
