@@ -68,8 +68,8 @@ public class HomePageTest extends TestBase{
 		return data;
 	}
 	@Test(dataProvider="getPGWTestData",groups="IntegrationTest")
-	public void validatePlaceOrder(String cardNo,String cvv) {
-		homepage.placeOrder(cardNo, cvv);
+	public void validatePlaceOrder(String qty,String cardNo,String cvv) {
+		homepage.placeOrder(qty,cardNo, cvv );
 	}
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() {

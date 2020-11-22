@@ -16,7 +16,7 @@ public class PaymentProcessPage extends TestBase {
 	@FindBy(xpath="//font[normalize-space()='Pay Ammount']")
 	WebElement PaymentLabel;
 	
-	@FindBy(xpath="//font[normalize-space()='$100.00']")
+	@FindBy(xpath="//*[@id='three']//font[starts-with(normalize-space(text()),'$')]")
 	WebElement PriceTag;
 	@FindBy(xpath="//input[@id='card_nmuber']")
 	WebElement cardNum;

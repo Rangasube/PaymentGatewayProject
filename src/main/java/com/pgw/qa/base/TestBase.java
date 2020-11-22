@@ -10,12 +10,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.pgw.qa.util.EventListener;
 import com.pgw.qa.util.TestUtil;
 
 public class TestBase {
 	public static Properties prop;
 	public static WebDriver driver;
+	public static EventFiringWebDriver e_driver;
+	public static EventListener eventListener;
 
 	public TestBase() {
 		try {
@@ -46,11 +50,19 @@ public class TestBase {
 			System.setProperty("webdriver.ie.driver","c:\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
+		
+		e_driver = new EventFiringWebDriver(driver);
+		eventListener = new EventListener();
+		e_driver.register(eventListener);
+		driver=e_driver;
+
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGELOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		//logInfo("Entering URL of the Application");
 		driver.get(prop.getProperty("url"));
+		
 	}
 }
