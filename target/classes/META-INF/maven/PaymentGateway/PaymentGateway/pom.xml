@@ -61,7 +61,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\Users\Sai Sharan\eclipse-workspace\PaymentGateway\testng.xml</suiteXmlFile>
+						<suiteXmlFile>C:\Users\Sai Sharan\eclipse-workspace\PaymentGateway\src\main\resources\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

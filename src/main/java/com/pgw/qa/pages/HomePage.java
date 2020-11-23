@@ -85,7 +85,7 @@ public class HomePage extends TestBase{
 
 		String totalPrice = paymentProcessPage.PriceTag.getText();
 		System.out.println();
-		System.out.println("<<<<<< Total Price : "+totalPrice+">>>>>>");
+		System.out.println("------------------------------< Total Price : "+totalPrice+" >------------------------------");
 		System.out.println();
 		paymentProcessPage.paymentProcess(cardNo, cvv);
 		String msg = orderIdPage.successMessage.getText();
