@@ -45,7 +45,7 @@ public class PaymentProcessPage extends TestBase {
 	public boolean validatePriceTag() {
 		return PriceTag.isDisplayed();
 	}
-	public OrderIdPage paymentProcess(String cardNo,String cvv) {
+	public  OrderIdPage paymentProcess(String cardNo,String cvv) {
 	
 		Select select1,select2;
 		cardNum.sendKeys(cardNo);

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="com.pgw.qa.ExtentReportListener.ExtentListener"/>
+    <listener class-name="com.pgw.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <groups>
@@ -15,7 +15,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validatePlaceOrder" invocation-numbers="2"/>
+          <include name="validatePlaceOrder"/>
         </methods>
       </class> <!-- com.pgw.qa.testcases.HomePageTest -->
     </classes>

@@ -1,9 +1,5 @@
 package com.pgw.qa.testcases;
 
-import java.io.IOException;
-import java.util.HashMap;
-
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -52,7 +48,7 @@ public class PaymentProcessPageTest extends TestBase {
 		return data;
 	}
 	@Test(groups = "FunctionalTest",dataProvider="getPGWTestData")
-	public void paymentProcessTest(String cardNo,String cvv) {
+	public void paymentProcessTest(String qty,String cardNo,String cvv) {
 		orderIdPage = paymentProcessPage.paymentProcess(cardNo, cvv);
 	}
 	@AfterMethod(alwaysRun=true)

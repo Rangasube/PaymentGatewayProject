@@ -12,14 +12,13 @@ import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.Reporter;
 import org.testng.xml.XmlSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public  class ExtentListener implements IReporter{
+public class ExtentReporterNG implements IReporter{
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
@@ -73,27 +72,4 @@ public  class ExtentListener implements IReporter{
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-
-	public void start(Reporter report) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void stop() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void flush() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
-
-	public void setTestRunnerLogs() {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
