@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="16" total="19" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="160350" started-at="2020-11-23T07:38:52Z" finished-at="2020-11-23T07:41:33Z">
+    <groups>
+      <group name="IntegrationTest">
+        <method signature="HomePageTest.validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" class="com.pgw.qa.testcases.HomePageTest"/>
+      </group> <!-- IntegrationTest -->
+    </groups>
+    <test name="Test" duration-ms="160350" started-at="2020-11-23T07:38:52Z" finished-at="2020-11-23T07:41:33Z">
+      <class name="com.pgw.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="33313" started-at="2020-11-23T07:38:53Z" finished-at="2020-11-23T07:39:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="55245" started-at="2020-11-23T07:39:26Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:40:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567897418523]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[333]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="5783" started-at="2020-11-23T07:40:22Z" finished-at="2020-11-23T07:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="28557" started-at="2020-11-23T07:40:27Z" finished-at="2020-11-23T07:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="14145" started-at="2020-11-23T07:40:56Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:41:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4567891239638521]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[222]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="778" started-at="2020-11-23T07:41:10Z" finished-at="2020-11-23T07:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="15131" started-at="2020-11-23T07:41:11Z" finished-at="2020-11-23T07:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="5493" started-at="2020-11-23T07:41:26Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7894561239638521]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="1085" started-at="2020-11-23T07:41:31Z" finished-at="2020-11-23T07:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pgw.qa.testcases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
