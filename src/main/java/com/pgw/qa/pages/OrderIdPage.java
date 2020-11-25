@@ -31,9 +31,7 @@ public class OrderIdPage extends TestBase{
 	public boolean orderId() {
 		return orderId.isDisplayed();
 	}
-	public boolean verifyOrderId() {
-		return orderId.isDisplayed();
-	}
+	
 	public HomePage clickHomeButton()
 	{
 		homeButton.click();

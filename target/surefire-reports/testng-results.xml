@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="16" total="19" passed="3">
+<testng-results skipped="3" failed="1" ignored="1" total="16" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="160350" started-at="2020-11-23T07:38:52Z" finished-at="2020-11-23T07:41:33Z">
+  <suite name="Suite" duration-ms="200352" started-at="2020-11-25T05:11:51Z" finished-at="2020-11-25T05:15:12Z">
     <groups>
       <group name="IntegrationTest">
-        <method signature="HomePageTest.validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" class="com.pgw.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="validatePlaceOrder" class="com.pgw.qa.testcases.HomePageTest"/>
       </group> <!-- IntegrationTest -->
     </groups>
-    <test name="Test" duration-ms="160350" started-at="2020-11-23T07:38:52Z" finished-at="2020-11-23T07:41:33Z">
+    <test name="Test1" duration-ms="144854" started-at="2020-11-25T05:11:51Z" finished-at="2020-11-25T05:14:16Z">
       <class name="com.pgw.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="33313" started-at="2020-11-23T07:38:53Z" finished-at="2020-11-23T07:39:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="28366" started-at="2020-11-25T05:11:57Z" finished-at="2020-11-25T05:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="55245" started-at="2020-11-23T07:39:26Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:40:22Z">
+        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="validatePlaceOrder" duration-ms="7759" started-at="2020-11-25T05:12:26Z" description="verifying a placing order feature" data-provider="getPGWTestData" finished-at="2020-11-25T05:12:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="1">
@@ -28,76 +28,479 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[333]]>
+                <![CDATA[235]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePlaceOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="5783" started-at="2020-11-23T07:40:22Z" finished-at="2020-11-23T07:40:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="942" started-at="2020-11-25T05:12:33Z" finished-at="2020-11-25T05:12:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="28557" started-at="2020-11-23T07:40:27Z" finished-at="2020-11-23T07:40:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="14154" started-at="2020-11-25T05:12:34Z" finished-at="2020-11-25T05:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="14145" started-at="2020-11-23T07:40:56Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:41:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4567891239638521]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[222]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="homePageTitleTest" duration-ms="62" started-at="2020-11-25T05:12:49Z" description="HomePage Title Test" finished-at="2020-11-25T05:12:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePlaceOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="778" started-at="2020-11-23T07:41:10Z" finished-at="2020-11-23T07:41:11Z">
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="707" started-at="2020-11-25T05:12:49Z" finished-at="2020-11-25T05:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="setUp" is-config="true" duration-ms="15131" started-at="2020-11-23T07:41:11Z" finished-at="2020-11-23T07:41:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="13251" started-at="2020-11-25T05:12:49Z" finished-at="2020-11-25T05:13:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePlaceOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="validatePlaceOrder" duration-ms="5493" started-at="2020-11-23T07:41:26Z" data-provider="getPGWTestData" finished-at="2020-11-23T07:41:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[7894561239638521]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[111]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="appLogoTest()[pri:2, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="appLogoTest" duration-ms="932" started-at="2020-11-25T05:13:03Z" description="Application Logo Test" finished-at="2020-11-25T05:13:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePlaceOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@2a2d45ba]" name="tearDown" is-config="true" duration-ms="1085" started-at="2020-11-23T07:41:31Z" finished-at="2020-11-23T07:41:33Z">
+        </test-method> <!-- appLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="1467" started-at="2020-11-25T05:13:03Z" finished-at="2020-11-25T05:13:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="10577" started-at="2020-11-25T05:13:05Z" finished-at="2020-11-25T05:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="pgwLogoTest()[pri:3, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="pgwLogoTest" duration-ms="74" started-at="2020-11-25T05:13:16Z" description="PaymentGateWay Logos Test" finished-at="2020-11-25T05:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pgwLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="703" started-at="2020-11-25T05:13:16Z" finished-at="2020-11-25T05:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="12131" started-at="2020-11-25T05:13:16Z" finished-at="2020-11-25T05:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="productNameTest()[pri:4, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="productNameTest" duration-ms="171" started-at="2020-11-25T05:13:28Z" description="Product Name and Catalogue Test" finished-at="2020-11-25T05:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="1627" started-at="2020-11-25T05:13:29Z" finished-at="2020-11-25T05:13:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="14725" started-at="2020-11-25T05:13:30Z" finished-at="2020-11-25T05:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="productCatalogueTest()[pri:5, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="productCatalogueTest" duration-ms="72" started-at="2020-11-25T05:13:45Z" description="Product Catalogue Test" finished-at="2020-11-25T05:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productCatalogueTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="743" started-at="2020-11-25T05:13:45Z" finished-at="2020-11-25T05:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="11195" started-at="2020-11-25T05:13:46Z" finished-at="2020-11-25T05:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="productPriceTest()[pri:6, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="productPriceTest" duration-ms="61" started-at="2020-11-25T05:13:57Z" description="Product price display Test" finished-at="2020-11-25T05:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productPriceTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="744" started-at="2020-11-25T05:13:57Z" finished-at="2020-11-25T05:13:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="setUp" is-config="true" duration-ms="13068" started-at="2020-11-25T05:13:58Z" finished-at="2020-11-25T05:14:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="quantityTest()[pri:7, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="quantityTest" duration-ms="3706" started-at="2020-11-25T05:14:11Z" description="Quantity DropDown Test" finished-at="2020-11-25T05:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quantityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.HomePageTest@65aa6596]" name="tearDown" is-config="true" duration-ms="1170" started-at="2020-11-25T05:14:15Z" finished-at="2020-11-25T05:14:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pgw.qa.testcases.HomePageTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="54096" started-at="2020-11-25T05:14:17Z" finished-at="2020-11-25T05:15:11Z">
+      <class name="com.pgw.qa.testcases.PaymentProcessPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="setUp" is-config="true" duration-ms="15668" started-at="2020-11-25T05:14:17Z" finished-at="2020-11-25T05:14:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ppTitleTest()[pri:1, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="ppTitleTest" duration-ms="3381" started-at="2020-11-25T05:14:33Z" description="PaymentPage Title Test" finished-at="2020-11-25T05:14:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ppTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="tearDown" is-config="true" duration-ms="816" started-at="2020-11-25T05:14:36Z" finished-at="2020-11-25T05:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="setUp" is-config="true" duration-ms="13252" started-at="2020-11-25T05:14:37Z" finished-at="2020-11-25T05:14:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="paymentLableTest()[pri:2, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="paymentLableTest" duration-ms="723" started-at="2020-11-25T05:14:50Z" description="PaymentLabel Test" finished-at="2020-11-25T05:14:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentLableTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="tearDown" is-config="true" duration-ms="768" started-at="2020-11-25T05:14:51Z" finished-at="2020-11-25T05:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="setUp" is-config="true" duration-ms="14273" started-at="2020-11-25T05:14:52Z" finished-at="2020-11-25T05:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="priceTagTest()[pri:3, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="priceTagTest" duration-ms="3825" started-at="2020-11-25T05:15:06Z" description="validating payment process" finished-at="2020-11-25T05:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceTagTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="tearDown" is-config="true" duration-ms="1189" started-at="2020-11-25T05:15:10Z" finished-at="2020-11-25T05:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="paymentProcessTest(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.pgw.qa.testcases.PaymentProcessPageTest@28276e50]" name="paymentProcessTest" duration-ms="0" started-at="2020-11-25T05:15:11Z" description="validating payment process" finished-at="2020-11-25T05:15:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [paymentProcessTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [paymentProcessTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentProcessTest -->
+      </class> <!-- com.pgw.qa.testcases.PaymentProcessPageTest -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="54" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+      <class name="com.pgw.qa.testcases.OrderIdPageTest">
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="successMsgTest()[pri:1, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="successMsgTest" duration-ms="0" started-at="2020-11-25T05:15:12Z" description="Payment Success Message Test" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successMsgTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="tearDown" is-config="true" duration-ms="4" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="orderIdVisibleTest()[pri:2, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="orderIdVisibleTest" duration-ms="0" started-at="2020-11-25T05:15:12Z" description="OrderId visible Test" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderIdVisibleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="backtoHome()[pri:3, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="backtoHome" duration-ms="0" started-at="2020-11-25T05:15:12Z" description="Check Home button in OrderId Page is not working or not" finished-at="2020-11-25T05:15:12Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backtoHome -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pgw.qa.testcases.OrderIdPageTest@68d6972f]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-11-25T05:15:12Z" finished-at="2020-11-25T05:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pgw.qa.testcases.OrderIdPageTest -->
+    </test> <!-- Test3 -->
   </suite> <!-- Suite -->
 </testng-results>

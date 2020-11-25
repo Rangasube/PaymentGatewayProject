@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 203.819 s <<< FAILURE! - in TestSuite
+com.pgw.qa.testcases.PaymentProcessPageTest.paymentProcessTest  Time elapsed: 5.244 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Cannot inject @Test annotated Method [paymentProcessTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.514 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.536 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.551 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+

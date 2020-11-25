@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,  3 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.PaymentProcessPageTest" hash-for-method="paymentProcessTest">paymentProcessTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.OrderIdPageTest" hash-for-method="backtoHome">backtoHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.OrderIdPageTest" hash-for-method="orderIdVisibleTest">orderIdVisibleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.OrderIdPageTest" hash-for-method="successMsgTest">successMsgTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +140,57 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="validatePlaceOrder(9, 7894561239638521, 111)">validatePlaceOrder(9, 7894561239638521, 111)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="appLogoTest">appLogoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="validatePlaceOrder(6, 4567891239638521, 222)">validatePlaceOrder(6, 4567891239638521, 222)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="homePageTitleTest">homePageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="validatePlaceOrder(1, 1234567897418523, 333)">validatePlaceOrder(1, 1234567897418523, 333)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.PaymentProcessPageTest" hash-for-method="paymentLableTest">paymentLableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="pgwLogoTest">pgwLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.PaymentProcessPageTest" hash-for-method="ppTitleTest">ppTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.PaymentProcessPageTest" hash-for-method="priceTagTest">priceTagTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="productCatalogueTest">productCatalogueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="productNameTest">productNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="productPriceTest">productPriceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="quantityTest">quantityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pgw.qa.testcases.HomePageTest" hash-for-method="validatePlaceOrder(5, 1234567897418523, 235)">validatePlaceOrder(5, 1234567897418523, 235)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,6 +205,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pgw.qa.testcases.PaymentProcessPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="paymentProcessTest">
+                  </a> <!-- paymentProcessTest -->
+                  <span class="method-name">paymentProcessTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [paymentProcessTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(validating payment process)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.pgw.qa.testcases.OrderIdPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="backtoHome">
+                  </a> <!-- backtoHome -->
+                  <span class="method-name">backtoHome</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check Home button in OrderId Page is not working or not)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderIdVisibleTest">
+                  </a> <!-- orderIdVisibleTest -->
+                  <span class="method-name">orderIdVisibleTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(OrderId visible Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successMsgTest">
+                  </a> <!-- successMsgTest -->
+                  <span class="method-name">successMsgTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Payment Success Message Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -135,26 +285,110 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validatePlaceOrder(9, 7894561239638521, 111)">
-                  </a> <!-- validatePlaceOrder(9, 7894561239638521, 111) -->
-                  <span class="method-name">validatePlaceOrder</span>
-                  <span class="parameters">(9, 7894561239638521, 111)</span>
+                  <a name="appLogoTest">
+                  </a> <!-- appLogoTest -->
+                  <span class="method-name">appLogoTest</span>
+                  <em>
+(Application Logo Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validatePlaceOrder(6, 4567891239638521, 222)">
-                  </a> <!-- validatePlaceOrder(6, 4567891239638521, 222) -->
-                  <span class="method-name">validatePlaceOrder</span>
-                  <span class="parameters">(6, 4567891239638521, 222)</span>
+                  <a name="homePageTitleTest">
+                  </a> <!-- homePageTitleTest -->
+                  <span class="method-name">homePageTitleTest</span>
+                  <em>
+(HomePage Title Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validatePlaceOrder(1, 1234567897418523, 333)">
-                  </a> <!-- validatePlaceOrder(1, 1234567897418523, 333) -->
+                  <a name="pgwLogoTest">
+                  </a> <!-- pgwLogoTest -->
+                  <span class="method-name">pgwLogoTest</span>
+                  <em>
+(PaymentGateWay Logos Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productCatalogueTest">
+                  </a> <!-- productCatalogueTest -->
+                  <span class="method-name">productCatalogueTest</span>
+                  <em>
+(Product Catalogue Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productNameTest">
+                  </a> <!-- productNameTest -->
+                  <span class="method-name">productNameTest</span>
+                  <em>
+(Product Name and Catalogue Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productPriceTest">
+                  </a> <!-- productPriceTest -->
+                  <span class="method-name">productPriceTest</span>
+                  <em>
+(Product price display Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="quantityTest">
+                  </a> <!-- quantityTest -->
+                  <span class="method-name">quantityTest</span>
+                  <em>
+(Quantity DropDown Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePlaceOrder(5, 1234567897418523, 235)">
+                  </a> <!-- validatePlaceOrder(5, 1234567897418523, 235) -->
                   <span class="method-name">validatePlaceOrder</span>
-                  <span class="parameters">(1, 1234567897418523, 333)</span>
+                  <span class="parameters">(5, 1234567897418523, 235)</span>
+                  <em>
+(verifying a placing order feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pgw.qa.testcases.PaymentProcessPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="paymentLableTest">
+                  </a> <!-- paymentLableTest -->
+                  <span class="method-name">paymentLableTest</span>
+                  <em>
+(PaymentLabel Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ppTitleTest">
+                  </a> <!-- ppTitleTest -->
+                  <span class="method-name">ppTitleTest</span>
+                  <em>
+(PaymentPage Title Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="priceTagTest">
+                  </a> <!-- priceTagTest -->
+                  <span class="method-name">priceTagTest</span>
+                  <em>
+(validating payment process)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,20 +404,23 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.pgw.qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;com.pgw.qa.ExtentReports.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;IntegrationTest&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.pgw.qa.testcases.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;com.pgw.qa.testcases.PaymentProcessPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;com.pgw.qa.testcases.OrderIdPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +432,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,24 +472,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validatePlaceOrder')
 data.setCell(0, 2, 'com.pgw.qa.testcases.HomePageTest')
-data.setCell(0, 3, 55245);
+data.setCell(0, 3, 7759);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validatePlaceOrder')
-data.setCell(1, 2, 'com.pgw.qa.testcases.HomePageTest')
-data.setCell(1, 3, 14145);
+data.setCell(1, 1, 'priceTagTest')
+data.setCell(1, 2, 'com.pgw.qa.testcases.PaymentProcessPageTest')
+data.setCell(1, 3, 3825);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validatePlaceOrder')
+data.setCell(2, 1, 'quantityTest')
 data.setCell(2, 2, 'com.pgw.qa.testcases.HomePageTest')
-data.setCell(2, 3, 5493);
+data.setCell(2, 3, 3706);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ppTitleTest')
+data.setCell(3, 2, 'com.pgw.qa.testcases.PaymentProcessPageTest')
+data.setCell(3, 3, 3381);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'appLogoTest')
+data.setCell(4, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(4, 3, 932);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'paymentLableTest')
+data.setCell(5, 2, 'com.pgw.qa.testcases.PaymentProcessPageTest')
+data.setCell(5, 3, 723);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'productNameTest')
+data.setCell(6, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(6, 3, 171);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'pgwLogoTest')
+data.setCell(7, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(7, 3, 74);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'productCatalogueTest')
+data.setCell(8, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(8, 3, 72);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'homePageTitleTest')
+data.setCell(9, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(9, 3, 62);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'productPriceTest')
+data.setCell(10, 2, 'com.pgw.qa.testcases.HomePageTest')
+data.setCell(10, 3, 61);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'paymentProcessTest')
+data.setCell(11, 2, 'com.pgw.qa.testcases.PaymentProcessPageTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'backtoHome')
+data.setCell(12, 2, 'com.pgw.qa.testcases.OrderIdPageTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'orderIdVisibleTest')
+data.setCell(13, 2, 'com.pgw.qa.testcases.OrderIdPageTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'successMsgTest')
+data.setCell(14, 2, 'com.pgw.qa.testcases.OrderIdPageTest')
+data.setCell(14, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -261,53 +552,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">16 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.pgw.qa.testcases.HomePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">productNameTest</span>
-                <br/>
                 <span class="ignored-method-name">buyButtonTest</span>
-                <br/>
-                <span class="ignored-method-name">quantityTest</span>
-                <br/>
-                <span class="ignored-method-name">productPriceTest</span>
-                <br/>
-                <span class="ignored-method-name">homePageTitleTest</span>
-                <br/>
-                <span class="ignored-method-name">productCatalogueTest</span>
-                <br/>
-                <span class="ignored-method-name">pgwLogoTest</span>
-                <br/>
-                <span class="ignored-method-name">appLogoTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.pgw.qa.testcases.PaymentProcessPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">paymentLableTest</span>
-                <br/>
-                <span class="ignored-method-name">ppTitleTest</span>
-                <br/>
-                <span class="ignored-method-name">paymentProcessTest</span>
-                <br/>
-                <span class="ignored-method-name">priceTagTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.pgw.qa.testcases.OrderIdPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyOrderIdTest</span>
-                <br/>
-                <span class="ignored-method-name">backtoHome</span>
-                <br/>
-                <span class="ignored-method-name">orderIdVisibleTest</span>
-                <br/>
-                <span class="ignored-method-name">successMsgTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -325,37 +576,163 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatePlaceOrder(1, 1234567897418523, 333)</span>
-                <span class="method-start">33313 ms</span>
+                <span class="method-name">validatePlaceOrder(5, 1234567897418523, 235)</span>
+                <span class="method-start">28388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88562 ms</span>
+                <span class="method-start">36191 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">94345 ms</span>
+                <span class="method-start">37142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatePlaceOrder(6, 4567891239638521, 222)</span>
-                <span class="method-start">122902 ms</span>
+                <span class="method-name">homePageTitleTest</span>
+                <span class="method-start">51297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137047 ms</span>
+                <span class="method-start">51383 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">137825 ms</span>
+                <span class="method-start">52094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatePlaceOrder(9, 7894561239638521, 111)</span>
-                <span class="method-start">152956 ms</span>
+                <span class="method-name">appLogoTest</span>
+                <span class="method-start">65347 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">158449 ms</span>
+                <span class="method-start">66281 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">67750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pgwLogoTest</span>
+                <span class="method-start">78328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78404 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productNameTest</span>
+                <span class="method-start">91244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">93070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productCatalogueTest</span>
+                <span class="method-start">107797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">107871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">108616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productPriceTest</span>
+                <span class="method-start">119812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">119876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">120624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">quantityTest</span>
+                <span class="method-start">133892 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">137684 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pgw.qa.testcases.PaymentProcessPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">139864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ppTitleTest</span>
+                <span class="method-start">155533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">159770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">paymentLableTest</span>
+                <span class="method-start">173023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">173748 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">174517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">priceTagTest</span>
+                <span class="method-start">188792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">192631 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pgw.qa.testcases.OrderIdPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">successMsgTest</span>
+                <span class="method-start">-1606281117712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">orderIdVisibleTest</span>
+                <span class="method-start">-1606281117712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">backtoHome</span>
+                <span class="method-start">-1606281117712 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

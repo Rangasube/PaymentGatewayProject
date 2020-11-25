@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.pgw.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class HomePage extends TestBase{
 	PaymentProcessPage paymentProcessPage = new PaymentProcessPage();
 	OrderIdPage orderIdPage = new OrderIdPage();
@@ -70,6 +72,7 @@ public class HomePage extends TestBase{
 		buyButton.click();
 		return new PaymentProcessPage();
 	}
+	@Step("verifying Buy product and payment process by placing an order")
 	public void placeOrder(String qty,String cardNo,String cvv) {
 
 

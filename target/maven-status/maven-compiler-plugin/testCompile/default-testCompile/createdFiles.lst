@@ -1,3 +1,6 @@
-com\pgw\qa\testcases\HomePageTest.class
+com\pgw\qa\ExtentReports\ExtentTestManager.class
+com\pgw\qa\ExtentReports\ExtentManager.class
 com\pgw\qa\testcases\OrderIdPageTest.class
+com\pgw\qa\ExtentReports\TestListener.class
 com\pgw\qa\testcases\PaymentProcessPageTest.class
+com\pgw\qa\testcases\HomePageTest.class
