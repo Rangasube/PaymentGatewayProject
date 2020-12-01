@@ -1,28 +1,49 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 203.819 s <<< FAILURE! - in TestSuite
-com.pgw.qa.testcases.PaymentProcessPageTest.paymentProcessTest  Time elapsed: 5.244 s  <<< FAILURE!
+Tests run: 22, Failures: 8, Errors: 0, Skipped: 12, Time elapsed: 452.205 s <<< FAILURE! - in TestSuite
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 9.477 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.PaymentProcessPageTest.setUp  Time elapsed: 43.124 s  <<< FAILURE!
+java.lang.StackOverflowError
+
+com.pgw.qa.testcases.HomePageTest.appLogoTest  Time elapsed: 10.276 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'LAPTOP-VFM9P8ED', ip: '192.168.43.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\SAISHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5baed895a91a0aee8a9a42958dfbfdb9
+	at com.pgw.qa.testcases.HomePageTest.appLogoTest(HomePageTest.java:48)
+
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 10.473 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.HomePageTest.tearDown  Time elapsed: 49.43 s  <<< FAILURE!
+java.lang.StackOverflowError
+
+com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 81.16 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.pgw.qa.testcases.PaymentProcessPageTest.setUp  Time elapsed: 114.809 s  <<< FAILURE!
+java.lang.StackOverflowError
+
+com.pgw.qa.testcases.PaymentProcessPageTest.paymentProcessTest  Time elapsed: 114.857 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Cannot inject @Test annotated Method [paymentProcessTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-
-com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.514 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-
-com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.536 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-
-com.pgw.qa.testcases.OrderIdPageTest.setUp  Time elapsed: 5.551 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
 For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
 

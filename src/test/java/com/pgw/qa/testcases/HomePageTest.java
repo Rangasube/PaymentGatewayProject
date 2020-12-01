@@ -4,22 +4,20 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.pgw.qa.Listeners.AllureListener;
 import com.pgw.qa.base.TestBase;
 import com.pgw.qa.pages.HomePage;
 import com.pgw.qa.pages.PaymentProcessPage;
 import com.pgw.qa.util.TestUtil;
 
 import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-
-@Epic("PaymentGateway")
-@Feature("HomePageTest")
+@Listeners({AllureListener.class})
 public class HomePageTest extends TestBase{
 	HomePage homepage;
 	PaymentProcessPage paymentprocesspage;

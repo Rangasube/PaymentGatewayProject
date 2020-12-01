@@ -3,6 +3,7 @@
 <suite name="Suite">
 <listeners>
 		<listener class-name="com.pgw.qa.ExtentReports.TestListener" />
+		<listener class-name="com.pgw.qa.Listeners.AllureListener" />
 	</listeners>
 	<test name="Test1">
 		<!-- <groups> <run> <exclude name="IntegrationTest" /> </run> </groups> -->

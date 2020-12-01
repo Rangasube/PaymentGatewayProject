@@ -20,6 +20,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static EventFiringWebDriver e_driver;
 	public static EventListener eventListener;
+	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 
 	public TestBase() {
 		try {
@@ -64,5 +65,8 @@ public class TestBase {
 		//logInfo("Entering URL of the Application");
 		driver.get(prop.getProperty("url"));
 		
+	}
+	public static synchronized WebDriver getDriver() {
+		return tdriver.get();
 	}
 }
